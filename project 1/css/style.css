@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "M PLUS 1", sans-serif;  font-optical-sizing: auto;
+}
+
+.line::after{
+  content: '';
+  margin-top: 10px;
+ width:150px;
+  display: block;
+  height: 4px;
+  background-color: rgb(255, 225, 1);
+}
+body {
+  direction: rtl;
+}
+.navbar-nav .nav-item .active {
+  border-bottom: 2px solid yellow;
+  font-weight: bold;
+  background-color: rgba(238, 236, 236, 0.584);
+}
+.header-section{
+  position: relative;
+  padding: 1px;
+  background-size: cover;
+  background-image: url(../images/slide-bg-1.jpg);
+  height: 600px;
+}
+.home-info{
+  width: 50%;
+  margin-top: 15%;
+  margin-right: auto;
+}
+
+.icon-contuct-us{
+  text-align: center;
+  height: 70px;
+  width: 70px;
+  line-height: 80px;
+  border-radius: 80px;
+  display: inline-block;
+  border-radius: 50px;
+}
+.subscribe{
+background: url(../images/subscribe-our-newsletter-bg.jpg);
+height: 450px;
+position: relative;
+background-size:cover ;
+}
+
+
+.subscribe-item{
+  width: 50%;
+  margin: auto;
+  transform: translateY(100%);
+}
+.subscribe-item form input{
+  
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  width: 65%;
+  height: 35px;
+}
+.subscribe-item form button{
+  border-radius: 20px;
+}
+.icon-contuct i {
+  cursor: pointer;
+width: 50px;
+text-align: center;
+height: 50px;
+line-height: 50px;
+}
+.icon-contuct i:hover{
+  background: rgb(56, 55, 55);
+  
+}
+@media screen and (max-width: 700px) {
+  .home-info{
+    width: 80%;
+    margin-top:30% ;
+    margin-right: 0;
+    text-align: center;
+  }
+  .icon-contuct-us{
+    text-align: center;
+    width: 60px;
+    margin: auto;
+    height: 50px;
+    line-height: 60px;
+  }
+  .contuct-us{
+    text-align: center; 
+  }
+  .subscribe-item{
+    width: 80%;
+    margin: auto;
+    transform: translateY(60%);
+
+  }
+  .subscribe-item h1{
+    font-size: 15px;
+  }
+  .subscribe-item h5{
+    font-size: 11px;
+  }
+  .subscribe-item form {
+    width: 100%;
+    display: block;
+  }
+  .subscribe-item form input{
+    width: 100%;
+    border-radius: 0px;
+  }
+  .subscribe-item form button{
+    width: 100%;
+    border-radius: 0px;
+    margin-top: 2px;
+  }
+}
